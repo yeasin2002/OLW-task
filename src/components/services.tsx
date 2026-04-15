@@ -2,8 +2,6 @@ import React from 'react'
 import { servicesData } from '../data/services.data'
 import { ServicesCard } from './services-card'
 
-// Services data array
-
 export const Services = () => {
   return (
     <section className="bg-gray-50 py-20">
