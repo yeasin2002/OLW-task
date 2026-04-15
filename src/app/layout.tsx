@@ -9,7 +9,7 @@ import { rootMetadata } from '#/config/root-metadata'
 
 import { hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
-import { RootWrapper } from './root-wrapper'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +23,6 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <RootWrapper>{children}</RootWrapper>
         <Toaster />
       </body>
     </html>

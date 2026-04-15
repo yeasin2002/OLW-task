@@ -1,4 +1,3 @@
-import { ThemeToggle } from '@/components/theme-toggle'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Code2, Database, Palette, Shield, Sparkles, TestTube, Zap } from 'lucide-react'
@@ -37,23 +36,7 @@ export default async function HomePage() {
               </a>
             </nav>
           </div>
-          <div className="flex items-center space-x-4">
-            <ThemeToggle />
-            {/* <SignedIn>
-              <UserButton />
-            </SignedIn>
-            <SignedOut>
-              <Button variant="outline" size="sm">
-                <SignInButton>Sign in</SignInButton>
-              </Button>
-              <Button
-                size="sm"
-                className="bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
-              >
-                Get Started
-              </Button>
-            </SignedOut> */}
-          </div>
+          <div className="flex items-center space-x-4"></div>
         </div>
       </header>
 
