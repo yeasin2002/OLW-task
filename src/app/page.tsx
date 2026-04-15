@@ -1,9 +1,10 @@
 import { Nav } from '@/components/nav'
 
-import { TrustedCompanies } from '../components/Trusted-companies'
-import { Hero } from '../components/hero'
-import { Pricing } from '../components/pricing'
-import { Services } from '../components/services'
+import { Hero } from '@/components/hero'
+import { OurTools } from '@/components/our-tools'
+import { Pricing } from '@/components/pricing'
+import { Services } from '@/components/services'
+import { TrustedCompanies } from '@/components/trusted-companies'
 
 export default async function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default async function HomePage() {
       <TrustedCompanies />
       <Services />
       <Pricing />
+      <OurTools />
     </>
   )
 }
