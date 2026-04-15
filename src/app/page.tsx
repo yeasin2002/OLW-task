@@ -1,8 +1,9 @@
 import { Nav } from '@/components/nav'
 
-import { Hero } from '../components/hero'
-import { Services } from '../components/services'
 import { TrustedCompanies } from '../components/Trusted-companies'
+import { Hero } from '../components/hero'
+import { Pricing } from '../components/pricing'
+import { Services } from '../components/services'
 
 export default async function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default async function HomePage() {
       <Hero />
       <TrustedCompanies />
       <Services />
+      <Pricing />
     </>
   )
 }
