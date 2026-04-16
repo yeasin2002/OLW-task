@@ -1,64 +1,10 @@
 'use client'
 
 import React, { useState } from 'react'
+import { pricingPlans } from '../data/pricing.data'
 import { PricingCard } from './pricing-card'
 
-// Pricing data array
-const pricingPlans = [
-  {
-    id: 'freebie',
-    title: 'Freebie',
-    description: 'Ideal for individuals who need quick access to basic features.',
-    monthlyPrice: '$0',
-    yearlyPrice: '$0',
-    features: [
-      { name: '20,000+ of PNG & SVG graphics', included: true },
-      { name: 'Access to 100 million stock images', included: true },
-      { name: 'Upload custom icons and fonts', included: false },
-      { name: 'Unlimited Sharing', included: false },
-      { name: 'Upload graphics & video in up to 4k', included: false },
-      { name: 'Unlimited Projects', included: false },
-      { name: 'Instant Access to our design system', included: false },
-      { name: 'Create teams to collaborate on designs', included: false },
-    ],
-  },
-  {
-    id: 'professional',
-    title: 'Professional',
-    description: 'Ideal for individuals who who need advanced features and tools for client work.',
-    monthlyPrice: '$25',
-    yearlyPrice: '$19',
-    isPopular: true,
-    features: [
-      { name: '20,000+ of PNG & SVG graphics', included: true },
-      { name: 'Access to 100 million stock images', included: true },
-      { name: 'Upload custom icons and fonts', included: true },
-      { name: 'Unlimited Sharing', included: true },
-      { name: 'Upload graphics & video in up to 4k', included: true },
-      { name: 'Unlimited Projects', included: true },
-      { name: 'Instant Access to our design system', included: true },
-      { name: 'Create teams to collaborate on designs', included: false },
-    ],
-  },
-  {
-    id: 'enterprise',
-    title: 'Enterprise',
-    description:
-      'Ideal for businesses who need personalized services and security for large teams.',
-    monthlyPrice: '$100',
-    yearlyPrice: '$75',
-    features: [
-      { name: '20,000+ of PNG & SVG graphics', included: true },
-      { name: 'Access to 100 million stock images', included: true },
-      { name: 'Upload custom icons and fonts', included: true },
-      { name: 'Unlimited Sharing', included: true },
-      { name: 'Upload graphics & video in up to 4k', included: true },
-      { name: 'Unlimited Projects', included: true },
-      { name: 'Instant Access to our design system', included: true },
-      { name: 'Create teams to collaborate on designs', included: true },
-    ],
-  },
-]
+
 
 export const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false)
