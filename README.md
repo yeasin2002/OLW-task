@@ -1,13 +1,4 @@
-# 🚀 Next.js Starter Template
-
-A production-ready Next.js boilerplate with modern tooling, comprehensive testing, and enterprise-grade features.
-### ⭐ **Star this repository if it helped you!** 
-
-> 💫 **Built with love by [Yeasin](https://github.com/yeasin2002)**  and other contributor
-
-##### If you found  any issue or have any suggestion, please open an [issue](https://github.com/yeasin2002/nextjs-starter-template/issues) or a [pull request](https://github.com/yeasin2002/nextjs-starter-template/pulls).
-
-##### Feel free to reach out to me on [Linkedin](https://www.linkedin.com/in/yeasin2002/) or [Gmail](mailto:mdkawsarislam2002@gmail.com) if you have any questions or feedback.
+# OLW-task
 
 ## ✨ Features
 
