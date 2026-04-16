@@ -73,7 +73,7 @@ export const FAQ = () => {
 
           <Button
             size="lg"
-            className="mt-12 h-[72px] rounded-2xl bg-pink-500 px-10 text-2xl font-medium text-white shadow-none hover:bg-pink-600"
+            className="mt-12 h-18 rounded-2xl bg-pink-500 px-10 text-2xl font-medium text-white shadow-none hover:bg-pink-600"
           >
             Get in touch
           </Button>
