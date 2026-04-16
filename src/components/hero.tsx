@@ -10,7 +10,8 @@ import company4 from '@/assets/companies/company-4.png'
 
 export const Hero = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-hidden">
+      <div className="absolute inset-x-0 top-0 z-0 h-14 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.18),rgba(255,255,255,0)_72%)] sm:h-20" />
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -25,54 +26,58 @@ export const Hero = () => {
       {/* Floating Company Logos */}
       <div className="absolute inset-0">
         {/* Airbnb Logo - Top Left */}
-        <div className="absolute top-20 left-20">
-          <div className="flex rotate-12 transform items-center justify-center rounded-xl">
-            <Image src={company1} alt="AirbnbLogo" className="h-16 w-16 text-white" />
+        <div className="absolute top-18 left-[18%] sm:top-20 sm:left-[19%] lg:top-28 lg:left-[19%]">
+          <div className="hero-floating-logo rotate-12 transform">
+            <Image src={company1} alt="Airbnb logo" className="hero-company-logo" />
           </div>
         </div>
 
         {/* Booking.com Logo - Top Right */}
-        <div className="absolute top-16 right-20">
-          <div className="flex rotate-12 transform items-center justify-center rounded-xl">
-            <Image src={company2} alt="" className="h-16 w-16 text-white" />
+        <div className="absolute top-16 right-[18%] sm:top-18 sm:right-[19%] lg:top-24 lg:right-[18%]">
+          <div className="hero-floating-logo rotate-12 transform">
+            <Image src={company2} alt="Booking logo" className="hero-company-logo" />
           </div>
         </div>
 
         {/* V Logo - Bottom Left */}
-        <div className="absolute bottom-32 left-16">
-          <div className="flex rotate-6 transform items-center justify-center rounded-xl">
-            <Image src={company3} alt="" className="h-16 w-16 text-white" />
+        <div className="absolute bottom-30 left-[21%] sm:bottom-28 sm:left-[21%] lg:bottom-26 lg:left-[22%]">
+          <div className="hero-floating-logo rotate-6 transform">
+            <Image src={company3} alt="Company logo" className="hero-company-logo" />
           </div>
         </div>
 
         {/* Eye Logo - Bottom Right */}
-        <div className="absolute right-16 bottom-24">
-          <div className="flex rotate-6 transform items-center justify-center rounded-xl">
-            <Image src={company4} alt="" className="h-16 w-16 text-white" />
+        <div className="absolute right-[21%] bottom-24 sm:right-[21%] sm:bottom-22 lg:right-[21%] lg:bottom-20">
+          <div className="hero-floating-logo rotate-6 transform">
+            <Image src={company4} alt="Tripadvisor logo" className="hero-company-logo" />
           </div>
         </div>
 
         {/* Decorative Dots */}
-        <div className="absolute top-32 left-1/4 h-3 w-3 rounded-full bg-blue-500"></div>
-        <div className="absolute top-1/3 right-1/4 h-2 w-2 rounded-full bg-green-400"></div>
-        <div className="absolute bottom-1/3 left-1/3 h-4 w-4 rounded-full bg-red-400"></div>
-        <div className="absolute right-1/3 bottom-40 h-2 w-2 rounded-full bg-yellow-400"></div>
-        <div className="absolute top-1/2 left-12 h-3 w-3 rounded-full bg-purple-400"></div>
-        <div className="absolute top-2/3 right-12 h-2 w-2 rounded-full bg-pink-400"></div>
+        <div className="hero-dot top-32 left-[30%] h-3 w-3 bg-blue-500 sm:top-34 lg:top-32 lg:left-[31%]" />
+        <div className="hero-dot top-[22%] right-[31%] h-2.5 w-2.5 bg-emerald-400 lg:right-[32%]" />
+        <div className="hero-dot bottom-[34%] left-[40%] h-4 w-4 bg-red-400 lg:bottom-[38%] lg:left-[17%]" />
+        <div className="hero-dot bottom-18 left-[7%] h-2 w-2 bg-amber-300 lg:bottom-10" />
+        <div className="hero-dot top-[36%] left-[6%] h-3 w-3 bg-violet-500 lg:top-[26%] lg:left-[6.5%]" />
+        <div className="hero-dot bottom-18 left-[52%] h-3.5 w-3.5 bg-cyan-400 lg:bottom-10" />
+        <div className="hero-dot top-[39%] right-[11%] h-3.5 w-3.5 bg-amber-300 lg:top-[39%] lg:right-[11%]" />
+        <div className="hero-dot right-[8%] bottom-28 h-2 w-2 bg-slate-900 lg:right-[8%] lg:bottom-28" />
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 pt-32 pb-32">
-        <div className="mx-auto max-w-4xl text-center">
+      <div className="relative z-10 container mx-auto px-4 pt-28 pb-28 sm:pt-30 sm:pb-32 lg:pt-34 lg:pb-36">
+        <div className="mx-auto max-w-5xl text-center">
           {/* Main Heading */}
-          <h1 className="lg:text-[ 48px] mb-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-[4.25rem] lg:leading-[1.08]">
             Airbnb Assistants For
             <br />
-            <span className="text-[38.13px] font-medium text-black">Property Management</span>
+            <span className="text-[2.15rem] font-medium text-black sm:text-[2.65rem] lg:text-[3.8rem]">
+              Property Management
+            </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="mx-auto mb-12 max-w-2xl text-[14px] leading-relaxed text-gray-600">
+          <p className="mx-auto mb-12 max-w-3xl text-[14px] leading-[1.7] text-gray-700 lg:text-[15px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
