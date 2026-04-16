@@ -27,21 +27,17 @@ export const PricingCard = ({
   buttonText = "Get Started Now"
 }: PricingCardProps) => {
   return (
-    <div className={`relative rounded-2xl p-8 ${
-      isPopular 
-        ? 'bg-pink-500 text-white shadow-xl' 
-        : 'bg-white border border-gray-200 shadow-sm'
-    }`}>
+    <div
+      className={`relative rounded-2xl p-8 ${
+        isPopular ? 'bg-primary text-white shadow-xl' : 'border border-gray-200 bg-white shadow-sm'
+      }`}
+    >
       {/* Card Header */}
       <div className="mb-8">
-        <h3 className={`text-2xl font-bold mb-3 ${
-          isPopular ? 'text-white' : 'text-gray-900'
-        }`}>
+        <h3 className={`mb-3 text-2xl font-bold ${isPopular ? 'text-white' : 'text-gray-900'}`}>
           {title}
         </h3>
-        <p className={`text-sm leading-relaxed ${
-          isPopular ? 'text-pink-100' : 'text-gray-600'
-        }`}>
+        <p className={`text-sm leading-relaxed ${isPopular ? 'text-pink-100' : 'text-gray-600'}`}>
           {description}
         </p>
       </div>
@@ -49,14 +45,10 @@ export const PricingCard = ({
       {/* Price */}
       <div className="mb-8">
         <div className="flex items-baseline">
-          <span className={`text-5xl font-bold ${
-            isPopular ? 'text-white' : 'text-gray-900'
-          }`}>
+          <span className={`text-5xl font-bold ${isPopular ? 'text-white' : 'text-gray-900'}`}>
             {price}
           </span>
-          <span className={`ml-2 text-lg ${
-            isPopular ? 'text-pink-100' : 'text-gray-500'
-          }`}>
+          <span className={`ml-2 text-lg ${isPopular ? 'text-pink-100' : 'text-gray-500'}`}>
             {period}
           </span>
         </div>
@@ -65,12 +57,12 @@ export const PricingCard = ({
       {/* CTA Button */}
       <div className="mb-8">
         <Button
-          className={`w-full py-3 text-base font-medium rounded-lg transition-colors duration-200 ${
+          className={`w-full rounded-lg py-3 text-base font-medium transition-colors duration-200 ${
             isPopular
-              ? 'bg-white text-pink-500 hover:bg-gray-50'
-              : 'bg-transparent text-pink-500 border border-pink-500 hover:bg-pink-50'
+              ? 'text-primary bg-white hover:bg-gray-50'
+              : 'text-primary border border-pink-500 bg-transparent hover:bg-pink-50'
           }`}
-          variant={isPopular ? "default" : "outline"}
+          variant={isPopular ? 'default' : 'outline'}
         >
           {buttonText}
         </Button>
@@ -80,26 +72,28 @@ export const PricingCard = ({
       <div className="space-y-4">
         {features.map((feature, index) => (
           <div key={index} className="flex items-center">
-            <div className={`shrink-0 w-5 h-5 rounded-full flex items-center justify-center mr-3 ${
-              feature.included
-                ? isPopular
-                  ? 'bg-white'
-                  : 'bg-pink-100'
-                : 'bg-gray-100'
-            }`}>
+            <div
+              className={`mr-3 flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${
+                feature.included ? (isPopular ? 'bg-white' : 'bg-pink-100') : 'bg-gray-100'
+              }`}
+            >
               {feature.included ? (
-                <Check className={`w-3 h-3 ${
-                  isPopular ? 'text-pink-500' : 'text-pink-500'
-                }`} />
+                <Check className={`h-3 w-3 ${isPopular ? 'text-primary' : 'text-primary'}`} />
               ) : (
-                <X className="w-3 h-3 text-gray-400" />
+                <X className="h-3 w-3 text-gray-400" />
               )}
             </div>
-            <span className={`text-sm ${
-              feature.included
-                ? isPopular ? 'text-white' : 'text-gray-900'
-                : isPopular ? 'text-pink-200' : 'text-gray-400'
-            }`}>
+            <span
+              className={`text-sm ${
+                feature.included
+                  ? isPopular
+                    ? 'text-white'
+                    : 'text-gray-900'
+                  : isPopular
+                    ? 'text-pink-200'
+                    : 'text-gray-400'
+              }`}
+            >
               {feature.name}
             </span>
           </div>

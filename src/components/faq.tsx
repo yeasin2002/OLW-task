@@ -15,7 +15,7 @@ export const FAQ = () => {
       <div className="mx-auto max-w-7xl rounded-[2rem] bg-[#fbfbfd] px-6 py-14 sm:px-10 lg:px-16 lg:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-[#182033] sm:text-5xl">
-            Frequently asked <span className="text-pink-500">questions</span>
+            Frequently asked <span className="text-primary">questions</span>
           </h2>
           <p className="mt-5 text-lg text-[#182033]">
             Everything you need to know about the product and billing.
@@ -33,7 +33,7 @@ export const FAQ = () => {
                 <AccordionTrigger
                   className="items-center py-5 text-left text-[1.05rem] font-semibold text-[#111827] hover:no-underline sm:text-[1.15rem]"
                   icon={
-                    <span className="relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-pink-500 text-pink-500">
+                    <span className="text-primary relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-pink-500">
                       <Plus className="h-3.5 w-3.5 transition-opacity duration-200 group-data-[state=open]:opacity-0" />
                       <Minus className="absolute h-3.5 w-3.5 opacity-0 transition-opacity duration-200 group-data-[state=open]:opacity-100" />
                     </span>
@@ -73,7 +73,7 @@ export const FAQ = () => {
 
           <Button
             size="lg"
-            className="mt-12 h-18 rounded-2xl bg-pink-500 px-10 text-2xl font-medium text-white shadow-none hover:bg-pink-600"
+            className="bg-primary mt-12 h-18 rounded-2xl px-10 text-2xl font-medium text-white shadow-none hover:bg-pink-600"
           >
             Get in touch
           </Button>

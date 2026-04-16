@@ -26,7 +26,7 @@ export const NavLarge = () => {
             className={cn(
               'text-gray-700 transition-colors duration-200 hover:text-gray-900',
               'text-sm font-medium',
-              'relative after:absolute after:bottom-[-4px] after:left-0 after:h-0.5 after:w-0',
+              'relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0',
               'after:bg-blue-500 after:transition-all after:duration-200',
               'hover:after:w-full'
             )}
@@ -40,7 +40,6 @@ export const NavLarge = () => {
       <div className="flex items-center">
         <Button
           className={cn(
-            'bg-pink-500 text-white hover:bg-pink-600',
             'rounded-md px-6 py-2 font-medium',
             'transition-all duration-200',
             'shadow-sm hover:shadow-md'

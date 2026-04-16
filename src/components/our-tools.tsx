@@ -29,7 +29,7 @@ export const OurTools = () => {
     <section className="py-20">
       <div className="mb-16 text-center">
         <h2 className="mb-6 text-4xl font-bold text-black">
-          Our <span className="text-pink-500">Tools</span>
+          Our <span className="text-primary">Tools</span>
         </h2>
         <p className="mx-auto max-w-3xl leading-relaxed text-black">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

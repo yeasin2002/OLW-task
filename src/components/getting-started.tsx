@@ -30,10 +30,10 @@ const steps = [
 export const GettingStarted = () => {
   return (
     <section className="bg-white px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-400">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
-            Getting Started is <span className="text-pink-500">Easy</span>
+            Getting Started is <span className="text-primary">Easy</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-gray-600 sm:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -45,7 +45,7 @@ export const GettingStarted = () => {
         <div className="mt-16 grid gap-12 md:grid-cols-3 md:gap-7">
           {steps.map((step) => (
             <article key={step.id} className="text-center">
-              <div className="relative rounded-2xl border border-pink-100 bg-white px-6 pb-10 pt-12">
+              <div className="relative rounded-2xl border border-pink-100 bg-white px-6 pt-12 pb-10">
                 <div className="absolute -top-5 left-5 flex h-14 w-14 items-center justify-center rounded-full border-4 border-pink-500 bg-white text-2xl font-medium text-gray-950 shadow-[0_8px_20px_rgba(244,114,182,0.12)]">
                   {step.id}
                 </div>

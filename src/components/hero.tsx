@@ -65,28 +65,25 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 pt-32 pb-32">
         <div className="mx-auto max-w-4xl text-center">
           {/* Main Heading */}
-          <h1 className="mb-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+          <h1 className="lg:text-[ 48px] mb-6 text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Airbnb Assistants For
             <br />
-            <span className="text-gray-700">Property Management</span>
+            <span className="text-[38.13px] font-medium text-black">Property Management</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-gray-600">
+          <p className="mx-auto mb-12 max-w-2xl text-[14px] leading-relaxed text-gray-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
 
           {/* CTA Buttons */}
-          <div className="mb-16 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button
-              size="lg"
-              className="rounded-md bg-pink-500 px-8 py-3 text-base font-medium text-white shadow-lg hover:bg-pink-600"
-            >
+          <div className="mb-16 flex flex-col items-center justify-center gap-4">
+            <Button className="h-14 rounded-md px-8 py-3 text-base text-[14px] font-medium text-white shadow-lg">
               Schedule A Meeting →
             </Button>
-            <button className="text-base font-medium text-gray-700 underline hover:text-gray-900">
+            <button className="text-base text-[14px] font-medium text-gray-700 underline hover:text-gray-900">
               See Pricing
             </button>
           </div>

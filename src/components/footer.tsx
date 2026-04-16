@@ -30,14 +30,14 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <div className="grid gap-12 border-t border-transparent pb-16 md:grid-cols-[1.2fr_1fr] lg:grid-cols-[1.3fr_0.7fr_0.7fr_0.7fr] lg:gap-16 lg:pb-20">
           <div className="max-w-md">
-            <div className="scale-[1.18] origin-left">
+            <div className="origin-left scale-[1.18]">
               <GoogleLogo />
             </div>
 
             <p className="mt-10 text-[1.05rem] leading-10 text-[#6b7280] sm:text-[1.12rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet
-              accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat ullamcorper
-              amet adipiscing fermentum.
+              accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat ullamcorper amet
+              adipiscing fermentum.
             </p>
 
             <div className="mt-12 flex items-center gap-8 text-[#2b2b31]">
@@ -46,7 +46,7 @@ export const Footer = () => {
                   key={label}
                   href="#"
                   aria-label={label}
-                  className="transition-colors hover:text-pink-500"
+                  className="hover:text-primary transition-colors"
                 >
                   <Icon className="h-7 w-7 stroke-[2.1]" />
                 </a>
@@ -64,7 +64,7 @@ export const Footer = () => {
                   <li key={item}>
                     <a
                       href="#"
-                      className="text-[1.05rem] font-medium text-[#20242f] transition-colors hover:text-pink-500 sm:text-[1.12rem]"
+                      className="hover:text-primary text-[1.05rem] font-medium text-[#20242f] transition-colors sm:text-[1.12rem]"
                     >
                       {item}
                     </a>

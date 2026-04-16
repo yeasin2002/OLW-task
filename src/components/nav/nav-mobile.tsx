@@ -77,7 +77,7 @@ export const NavMobile = () => {
             <div className="border-t p-4">
               <Button
                 className={cn(
-                  'w-full bg-pink-500 text-white hover:bg-pink-600',
+                  'bg-primary w-full text-white hover:bg-pink-600',
                   'rounded-md py-3 text-base font-medium',
                   'transition-all duration-200'
                 )}

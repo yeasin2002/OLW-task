@@ -65,7 +65,7 @@ export const UserReviews = () => {
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
-            Check Our Clients <span className="text-pink-500">Review</span>
+            Check Our Clients <span className="text-primary">Review</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-gray-600 sm:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

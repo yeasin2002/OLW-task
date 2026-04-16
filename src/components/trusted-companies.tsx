@@ -22,34 +22,30 @@ const companyLogos = [
 
 export const TrustedCompanies = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-0">
-        <div className="max-w-7xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              Trusted by leaders in 50+ industries
-            </h2>
-          </div>
+    <section className="bg-white py-16">
+      {/* Section Header */}
+      <div className="mb-12 text-center">
+        <h2 className="text-2xl font-semibold text-gray-900">
+          Trusted by leaders in 50+ industries
+        </h2>
+      </div>
 
-          {/* Company Logos Grid */}
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
-            {companyLogos.map((logo, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-200"
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={120}
-                  height={40}
-                  className="h-8 w-auto object-contain filter  transition-all duration-200"
-                />
-              </div>
-            ))}
+      {/* Company Logos Grid */}
+      <div className="flex flex-wrap items-center justify-center gap-8 bg-[#F6F6F6] py-6 md:gap-12 lg:gap-16">
+        {companyLogos.map((logo, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center opacity-70 transition-opacity duration-200 hover:opacity-100"
+          >
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={120}
+              height={80}
+              className="h-11 w-auto object-contain filter transition-all duration-200"
+            />
           </div>
-        </div>
+        ))}
       </div>
     </section>
   )

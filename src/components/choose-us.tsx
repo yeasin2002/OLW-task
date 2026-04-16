@@ -16,7 +16,7 @@ export const ChooseUs = () => {
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-pink-100 bg-[#fff1f5] shadow-[0_28px_80px_rgba(244,114,182,0.12)]">
         <div className="grid items-center gap-12 px-6 py-10 sm:px-10 md:px-12 lg:grid-cols-[0.92fr_1.08fr] lg:px-16 lg:py-16">
           <div className="max-w-xl">
-            <span className="inline-flex rounded-full border border-pink-200 bg-white/80 px-4 py-1 text-sm font-medium tracking-[0.18em] text-pink-500 uppercase">
+            <span className="text-primary inline-flex rounded-full border border-pink-200 bg-white/80 px-4 py-1 text-sm font-medium tracking-[0.18em] uppercase">
               Why choose us
             </span>
             <h2 className="mt-6 max-w-lg text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl lg:text-[3.5rem] lg:leading-[1.05]">
@@ -33,7 +33,7 @@ export const ChooseUs = () => {
                   key={reason}
                   className="flex items-center gap-4 text-lg font-semibold text-gray-900"
                 >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-pink-200/80 text-pink-500">
+                  <span className="text-primary flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-pink-200/80">
                     <Check className="h-5 w-5" />
                   </span>
                   <span>{reason}</span>
@@ -43,7 +43,7 @@ export const ChooseUs = () => {
 
             <Button
               size="lg"
-              className="mt-10 rounded-xl bg-pink-500 px-8 text-base font-semibold text-white shadow-[0_18px_36px_rgba(244,114,182,0.32)] hover:bg-pink-600"
+              className="bg-primary mt-10 rounded-xl px-8 text-base font-semibold text-white shadow-[0_18px_36px_rgba(244,114,182,0.32)] hover:bg-pink-600"
             >
               Schedule A Meeting
               <ArrowRight className="h-4 w-4" />
@@ -52,7 +52,7 @@ export const ChooseUs = () => {
 
           <div className="relative lg:min-h-135">
             <div className="absolute inset-x-10 top-10 hidden h-40 rounded-full bg-pink-300/30 blur-3xl lg:block" />
-            <div className="absolute bottom-6 left-8 hidden h-44 w-44 rounded-full bg-pink-500/18 blur-3xl lg:block" />
+            <div className="bg-primary/18 absolute bottom-6 left-8 hidden h-44 w-44 rounded-full blur-3xl lg:block" />
             <div className="relative mx-auto max-w-170">
               <Image
                 src={ChooseUsRightSideImage}

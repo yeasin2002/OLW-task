@@ -4,13 +4,13 @@ import { ServicesCard } from './services-card'
 
 export const Services = () => {
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-6xl">
+    <section className="py-20">
+      <div className="px-4">
+        <div className="mx-auto max-w-400">
           {/* Section Header */}
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-900">
-              Our <span className="text-pink-500">Service</span>
+              Our <span className="text-primary">Service</span>
             </h2>
             <p className="mx-auto max-w-3xl leading-relaxed text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -24,7 +24,8 @@ export const Services = () => {
             {servicesData.map((service) => (
               <ServicesCard
                 key={service.id}
-                icon={service.icon}
+                image={service.image}
+                imageAlt={service.imageAlt}
                 title={service.title}
                 description={service.description}
               />
