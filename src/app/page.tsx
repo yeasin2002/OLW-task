@@ -1,5 +1,6 @@
 import { Nav } from '@/components/nav'
 
+import { ChooseUs } from '@/components/choose-us'
 import { Hero } from '@/components/hero'
 import { OurTools } from '@/components/our-tools'
 import { Pricing } from '@/components/pricing'
@@ -17,6 +18,7 @@ export default async function HomePage() {
       <Pricing />
       <OurTools />
       <GettingStarted />
+      <ChooseUs />
     </>
   )
 }
