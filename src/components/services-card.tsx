@@ -13,15 +13,11 @@ export const ServicesCard = ({ image, imageAlt, title, description }: ServicesCa
   return (
     <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-shadow duration-200 hover:shadow-md">
       <div className="mb-6">
-        <Image
-          src={image}
-          alt={imageAlt}
-          className="h-16 w-16 object-contain"
-        />
+        <Image src={image} alt={imageAlt} className="h-16 w-16 object-contain" />
       </div>
       <h3 className="mb-4 text-xl font-semibold text-gray-900">{title}</h3>
       <p className="mb-6 text-sm leading-relaxed text-gray-600">{description}</p>
-      <button className="text-primary rounded-full border border-pink-500 px-6 py-2 text-sm font-medium transition-colors duration-200 hover:bg-pink-50">
+      <button className="text-primary border-primary rounded-full border px-6 py-2 text-sm font-medium transition-colors duration-200 hover:bg-pink-50">
         Read More
       </button>
     </div>

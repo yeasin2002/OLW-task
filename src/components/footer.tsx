@@ -27,7 +27,7 @@ const socialLinks = [
 export const Footer = () => {
   return (
     <footer className="bg-white pt-16 sm:pt-20 lg:pt-24">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+      <div className="px-6 sm:px-10 lg:px-16">
         <div className="grid gap-12 border-t border-transparent pb-16 md:grid-cols-[1.2fr_1fr] lg:grid-cols-[1.3fr_0.7fr_0.7fr_0.7fr] lg:gap-16 lg:pb-20">
           <div className="max-w-md">
             <div className="origin-left scale-[1.18]">
@@ -56,7 +56,7 @@ export const Footer = () => {
 
           {footerLinks.map((group) => (
             <div key={group.title}>
-              <h3 className="text-[2rem] font-semibold tracking-tight text-[#20242f] md:text-[1.9rem]">
+              <h3 className="text-[2rem] font-bold tracking-tight text-[#18181B] md:text-[16px]">
                 {group.title}
               </h3>
               <ul className="mt-8 space-y-7">
@@ -64,7 +64,7 @@ export const Footer = () => {
                   <li key={item}>
                     <a
                       href="#"
-                      className="hover:text-primary text-[1.05rem] font-medium text-[#20242f] transition-colors sm:text-[1.12rem]"
+                      className="hover:text-primary text-[14px] font-medium text-[#20242f] transition-colors sm:text-[1.12rem]"
                     >
                       {item}
                     </a>
@@ -77,7 +77,7 @@ export const Footer = () => {
       </div>
 
       <div className="bg-[#2a0f4b] px-6 py-6 text-center sm:px-10 lg:px-16 lg:py-7">
-        <p className="text-base font-medium text-white sm:text-lg">
+        <p className="font-poppins! text-[14px] text-white sm:text-lg">
           © Copyright 2024, All Rights Reserved by XYZ
         </p>
       </div>

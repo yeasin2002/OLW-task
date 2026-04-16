@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -100,7 +101,7 @@
 
   --popover-foreground: oklch(0.145 0 0);
 
-  --primary: #ED3C6A; 
+  --primary: #ed3c6a;
 
   --primary-foreground: oklch(0.985 0 0);
 
@@ -151,13 +152,25 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
   body {
     @apply bg-background text-foreground font-dm-sans;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply mb-6 text-[30px] font-bold text-black;
+  }
+  .section-subtitle {
+    @apply mx-auto max-w-3xl  text-black text-[14px];
   }
 }

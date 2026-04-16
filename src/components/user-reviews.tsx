@@ -61,9 +61,9 @@ export const UserReviews = () => {
   }
 
   return (
-    <section className="overflow-hidden bg-white px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-7xl">
-        <div className="mx-auto max-w-3xl text-center">
+    <section className="overflow-hidden bg-white px-4 py-20 sm:px-6 lg:py-24">
+      <div className="mx-auto">
+        <div className="mx-auto text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
             Check Our Clients <span className="text-primary">Review</span>
           </h2>

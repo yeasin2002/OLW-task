@@ -28,7 +28,7 @@ export const PricingCard = ({
 }: PricingCardProps) => {
   return (
     <div
-      className={`relative rounded-2xl p-8 ${
+      className={`font-manrope relative rounded-2xl p-8 ${
         isPopular ? 'bg-primary text-white shadow-xl' : 'border border-gray-200 bg-white shadow-sm'
       }`}
     >
@@ -45,7 +45,7 @@ export const PricingCard = ({
       {/* Price */}
       <div className="mb-8">
         <div className="flex items-baseline">
-          <span className={`text-5xl font-bold ${isPopular ? 'text-white' : 'text-gray-900'}`}>
+          <span className={`text-5xl font-semibold ${isPopular ? 'text-white' : 'text-gray-900'}`}>
             {price}
           </span>
           <span className={`ml-2 text-lg ${isPopular ? 'text-pink-100' : 'text-gray-500'}`}>
@@ -57,10 +57,10 @@ export const PricingCard = ({
       {/* CTA Button */}
       <div className="mb-8">
         <Button
-          className={`w-full rounded-lg py-3 text-base font-medium transition-colors duration-200 ${
+          className={`w-full rounded-md py-3 text-base font-medium transition-colors duration-200 ${
             isPopular
               ? 'text-primary bg-white hover:bg-gray-50'
-              : 'text-primary border border-pink-500 bg-transparent hover:bg-pink-50'
+              : 'text-primary border-primary hover:bg-primary border bg-transparent hover:text-white'
           }`}
           variant={isPopular ? 'default' : 'outline'}
         >
@@ -74,7 +74,7 @@ export const PricingCard = ({
           <div key={index} className="flex items-center">
             <div
               className={`mr-3 flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${
-                feature.included ? (isPopular ? 'bg-white' : 'bg-pink-100') : 'bg-gray-100'
+                feature.included ? (isPopular ? 'bg-white' : 'bg-[#FAC4D2]') : 'bg-gray-100'
               }`}
             >
               {feature.included ? (
@@ -84,7 +84,7 @@ export const PricingCard = ({
               )}
             </div>
             <span
-              className={`text-sm ${
+              className={`font-manrope text-sm font-medium ${
                 feature.included
                   ? isPopular
                     ? 'text-white'

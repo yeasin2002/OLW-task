@@ -28,10 +28,10 @@ export const OurTools = () => {
   return (
     <section className="py-20">
       <div className="mb-16 text-center">
-        <h2 className="mb-6 text-4xl font-bold text-black">
+        <h2 className="section-title">
           Our <span className="text-primary">Tools</span>
         </h2>
-        <p className="mx-auto max-w-3xl leading-relaxed text-black">
+        <p className="section-subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -44,7 +44,7 @@ export const OurTools = () => {
           {toolLogos.map((tool, index) => (
             <div
               key={index}
-              className="flex min-h-[160px] items-center justify-center rounded-2xl bg-white p-8 transition-shadow duration-200"
+              className="flex min-h-40 items-center justify-center rounded-2xl bg-white p-8 transition-shadow duration-200"
             >
               <Image
                 src={tool.src}
