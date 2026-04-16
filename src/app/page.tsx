@@ -7,6 +7,7 @@ import { Pricing } from '@/components/pricing'
 import { Services } from '@/components/services'
 import { TrustedCompanies } from '@/components/trusted-companies'
 import { UserReviews } from '@/components/user-reviews'
+import { FAQ } from '../components/faq'
 import { GettingStarted } from '../components/getting-started'
 
 export default async function HomePage() {
@@ -21,6 +22,7 @@ export default async function HomePage() {
       <GettingStarted />
       <ChooseUs />
       <UserReviews />
+      <FAQ />
     </>
   )
 }

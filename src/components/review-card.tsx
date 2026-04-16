@@ -42,19 +42,31 @@ export const ReviewCard = ({
       </div>
 
       <div className="min-w-0">
-        <h3 className={compact ? 'text-base font-semibold text-gray-950' : 'text-lg font-semibold text-gray-950'}>
+        <h3
+          className={
+            compact
+              ? 'text-base font-semibold text-gray-950'
+              : 'text-lg font-semibold text-gray-950'
+          }
+        >
           {name}
         </h3>
         <p
           className={
             compact
-              ? 'mt-1 max-w-[15rem] text-sm leading-5 text-gray-600'
-              : 'mt-1 max-w-[17rem] text-sm leading-6 text-gray-600'
+              ? 'mt-1 max-w-60 text-sm leading-5 text-gray-600'
+              : 'mt-1 max-w-68 text-sm leading-6 text-gray-600'
           }
         >
           {description}
         </p>
-        <div className={compact ? 'mt-2 flex items-center gap-1 text-[#f59e0b]' : 'mt-3 flex items-center gap-1 text-[#f59e0b]'}>
+        <div
+          className={
+            compact
+              ? 'mt-2 flex items-center gap-1 text-[#f59e0b]'
+              : 'mt-3 flex items-center gap-1 text-[#f59e0b]'
+          }
+        >
           {Array.from({ length: 5 }).map((_, index) => (
             <Star key={index} className="h-3.5 w-3.5 fill-current" />
           ))}

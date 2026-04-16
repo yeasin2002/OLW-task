@@ -114,7 +114,7 @@ export const UserReviews = () => {
                   description={activeReview.description}
                   accentColor={activeReview.accentColor}
                   avatarLabel={activeReview.avatarLabel}
-                  className="min-h-[196px]"
+                  className="min-h-49"
                 />
               </motion.div>
             </AnimatePresence>
