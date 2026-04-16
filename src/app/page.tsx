@@ -6,6 +6,7 @@ import { OurTools } from '@/components/our-tools'
 import { Pricing } from '@/components/pricing'
 import { Services } from '@/components/services'
 import { TrustedCompanies } from '@/components/trusted-companies'
+import { UserReviews } from '@/components/user-reviews'
 import { GettingStarted } from '../components/getting-started'
 
 export default async function HomePage() {
@@ -19,6 +20,7 @@ export default async function HomePage() {
       <OurTools />
       <GettingStarted />
       <ChooseUs />
+      <UserReviews />
     </>
   )
 }
