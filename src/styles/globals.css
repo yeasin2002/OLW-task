@@ -78,6 +78,11 @@
   --color-sidebar-border: var(--sidebar-border);
 
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* custom fonts */
+  --font-dm-sans: var(--font-dm-sans);
+  --font-manrope: var(--font-manrope);
+  --font-poppins: var(--font-poppins);
 }
 
 :root {
@@ -153,6 +158,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-dm-sans;
   }
 }

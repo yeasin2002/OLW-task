@@ -1,17 +1,26 @@
 import { Toaster } from '@/components/ui/toaster'
 
+import { DM_Sans_font, Manrope_font, Poppins_font } from '@/lib/font'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import type React from 'react'
-import '../styles/globals.css'
 
+import { cn } from '../lib/utils'
+import '../styles/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body
+        className={cn(
+          inter.className,
+          DM_Sans_font.variable,
+          Manrope_font.variable,
+          Poppins_font.variable
+        )}
+      >
         {children}
         <Toaster />
       </body>
