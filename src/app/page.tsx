@@ -5,6 +5,7 @@ import { OurTools } from '@/components/our-tools'
 import { Pricing } from '@/components/pricing'
 import { Services } from '@/components/services'
 import { TrustedCompanies } from '@/components/trusted-companies'
+import { GettingStarted } from '../components/getting-started'
 
 export default async function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default async function HomePage() {
       <Services />
       <Pricing />
       <OurTools />
+      <GettingStarted />
     </>
   )
 }
